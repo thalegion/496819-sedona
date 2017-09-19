@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Danil Sergeevich](https://up.htmlacademy.ru/adaptive/12/user/496819).
-* Наставник: `Неизвестно`.
+* Наставник: [Арсений Березин](https://up.htmlacademy.ru/adaptive/12/user/263537).
 
 ---
 
