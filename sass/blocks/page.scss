@@ -1,0 +1,29 @@
+.page{
+  font-family: $regular-font;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.page__title {
+  margin: auto 30px;
+  margin-bottom: 40px;
+
+  font-family: $bold-font;
+  font-size: 18px;
+  line-height: inherit;
+
+  &--small {
+    margin-bottom: 30px;
+  }
+}
+.page__subtitle {
+  margin: auto 25px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: inherit;
+
+  &--small {
+    margin-bottom: 0px;
+  }
+}

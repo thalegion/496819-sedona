@@ -1,0 +1,39 @@
+.menu {
+  position: relative;
+  z-index: 1;
+}
+.menu__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  font-size: 0;
+
+  &::after {
+    content: '';
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-color: #ffffff;
+    mask-image: url("../img/icon-cross.svg");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+}
+.menu__item {
+}
+.menu__link {
+  width: 100%;
+  padding: 15px;
+
+  font-size: 18px;
+
+  &:not(.menu__link--first) {
+    border-top: 1px solid #9ac2db;
+  }
+  &:not(.menu__link--last) {
+    border-bottom: 1px solid #678fa8;
+  }
+}

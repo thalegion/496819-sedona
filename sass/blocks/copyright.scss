@@ -1,0 +1,33 @@
+.copyright {
+  font-family: $regular-font;
+  font-size: 14px;
+  line-height: 26px;
+}
+.copyright__link {
+  position: relative;
+
+  padding-right: 40px;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    right: 0;
+    top: -8px;
+
+    width: 27px;
+    height: 34px;
+
+    background-color: #000000;
+    mask-image: url("../img/logo-htmlacademy.svg");
+    mask-repeat: no-repeat;
+    mask-position: right;
+  }
+
+  &:hover::after {
+    background-color: $main-background;
+  }
+  &:active::after {
+    background-color: #b2b2b2;
+  }
+}

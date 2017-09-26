@@ -1,0 +1,7 @@
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+.logo__filler {
+    width: 24px; //Равно последнему элементу в блоке
+}
