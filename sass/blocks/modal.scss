@@ -1,0 +1,22 @@
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 10%;
+
+  display: none;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+  &--opened {
+    display: block;
+  }
+}
+.modal__body {
+  padding: 45px 20px 35px;
+}
+.modal__footer {
+  padding: 20px 0;
+
+  background-color: #f2f2f2;
+}

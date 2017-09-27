@@ -6,9 +6,15 @@
   font-family: $bold-font;
   font-size: 21px;
   line-height: 26px;
+  text-transform: uppercase;
 
   background-color: $main-background;
   color: #fff;
+
+  &--small {
+    width: auto;
+    padding: 20px 80px;
+  }
 
   &:hover {
     background-color: $main-background-hover;

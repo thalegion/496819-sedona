@@ -5,7 +5,7 @@
   text-transform: uppercase;
 }
 .page__title {
-  margin: auto 30px;
+  margin: auto 20px;
   margin-bottom: 40px;
 
   font-family: $bold-font;
@@ -15,9 +15,12 @@
   &--small {
     margin-bottom: 30px;
   }
+  &--extra-small {
+    margin-bottom: 20px;
+  }
 }
 .page__subtitle {
-  margin: auto 25px;
+  margin: auto 22px;
   margin-bottom: 30px;
 
   font-size: 14px;
