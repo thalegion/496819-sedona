@@ -1,20 +1,24 @@
 .socials {
-    padding-top: 40px;
-    margin-bottom: 40px;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
+
 .socials__title {
   margin-bottom: 0;
 
   font-size: 21px;
 }
+
 .socials__list {
   margin-top: 35px;
 }
+
 .socials__item {
   display: inline-block;
   width: 46px;
   height: 48px;
 }
+
 .socials__link {
   position: relative;
 
@@ -29,12 +33,13 @@
   &:hover {
     background-color: $main-background-hover;
   }
+
   &:active {
     background-color: $main-background-down;
   }
 
   &::after {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 0;
@@ -49,15 +54,19 @@
     mask-position: center;
   }
 }
-.socials__link:active::after{
+
+.socials__link:active::after {
   background-color: #88b6d1;
 }
+
 .socials__link--twitter::after {
   mask-image: url("../img/icon-twitter.svg");
 }
+
 .socials__link--facebook::after {
   mask-image: url("../img/icon-facebook.svg");
 }
+
 .socials__link--youtube::after {
   mask-image: url("../img/icon-youtube.svg");
 }

@@ -1,14 +1,17 @@
 .page-header__logo {
-  height: 56px; //пофиксить
-  box-shadow: 0px -2px 1px -1px rgba(0, 0, 0, 0.6);
   position: relative;
   z-index: 2;
+
+  height: 56px; //пофиксить
+
+  box-shadow: 0 -2px 1px -1px rgba(0, 0, 0, 0.6);
 }
+
 .page-header__menu-toggle {
   font-size: 0;
 
   &::after {
-    content: '';
+    content: "";
 
     display: block;
     width: 24px;
@@ -20,6 +23,7 @@
     mask-size: contain;
   }
 }
+
 .page-header__introduction {
   position: relative;
 
@@ -33,8 +37,9 @@
   &--main {
     padding: 90px 20px 65px;
   }
+
   &::after {
-    content: '';
+    content: "";
 
     position: absolute;
     bottom: 0;
@@ -44,7 +49,7 @@
     width: 100%;
     height: 26px;
 
-    background-image: url(../img/bg-intro-triangle-mobile.svg);
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
   }
 }

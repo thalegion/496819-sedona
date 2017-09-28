@@ -3,13 +3,14 @@
   font-size: 14px;
   line-height: 26px;
 }
+
 .copyright__link {
   position: relative;
 
   padding-right: 40px;
 
   &::after {
-    content: '';
+    content: "";
 
     position: absolute;
     right: 0;
@@ -27,6 +28,7 @@
   &:hover::after {
     background-color: $main-background;
   }
+
   &:active::after {
     background-color: #b2b2b2;
   }

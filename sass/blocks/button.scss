@@ -9,7 +9,7 @@
   text-transform: uppercase;
 
   background-color: $main-background;
-  color: #fff;
+  color: #ffffff;
 
   &--small {
     width: auto;
@@ -19,6 +19,7 @@
   &:hover {
     background-color: $main-background-hover;
   }
+
   &:active {
     background-color: $main-background-down;
     color: #88b6d1;

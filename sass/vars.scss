@@ -1,10 +1,11 @@
 @font-face {
   font-family: "PTSans";
-  src: url("../fonts/ptsans.woff")
+  src: url("../fonts/ptsans.woff");
 }
+
 @font-face {
   font-family: "PTSans Bold";
-  src: url("../fonts/ptsansbold.woff")
+  src: url("../fonts/ptsansbold.woff");
 }
 
 $bold-font: "PTSans Bold", "Arial", sans-serif;

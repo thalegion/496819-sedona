@@ -4,9 +4,11 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 .page__wrapper {
   margin: auto 22px;
 }
+
 .page__title {
   margin-bottom: 40px;
 
@@ -17,10 +19,12 @@
   &--small {
     margin-bottom: 30px;
   }
+
   &--extra-small {
     margin-bottom: 20px;
   }
 }
+
 .page__subtitle {
   margin-bottom: 30px;
 
@@ -28,6 +32,6 @@
   line-height: inherit;
 
   &--small {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
