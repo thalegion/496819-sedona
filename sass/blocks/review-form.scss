@@ -115,6 +115,9 @@
   line-height: 26px;
   text-transform: none;
 
+  cursor: pointer;
+  user-select: none;
+
   &::before {
     content: '';
 
@@ -163,6 +166,9 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+
+  cursor: pointer;
+  user-select: none;
 
   &::before {
     content: '';
