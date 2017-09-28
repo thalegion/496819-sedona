@@ -4,8 +4,10 @@
   text-align: center;
   text-transform: uppercase;
 }
+.page__wrapper {
+  margin: auto 22px;
+}
 .page__title {
-  margin: auto 20px;
   margin-bottom: 40px;
 
   font-family: $bold-font;
@@ -20,7 +22,6 @@
   }
 }
 .page__subtitle {
-  margin: auto 22px;
   margin-bottom: 30px;
 
   font-size: 14px;

@@ -45,22 +45,20 @@
   }
 }
 .reasons__title {
-  margin: 0 20px 15px;
+  margin: 0 0 15px;
 
   font-family: $bold-font;
   font-size: 18px;
   line-height: 26px;
 }
 .reasons__number {
-  margin: auto 20px 15px;
+  margin: auto 0 15px;
 
   font-family: $regular-font;
   font-size: 14px;
   line-height: 21px;
 }
 .reasons__subtitle {
-  margin: auto 20px;
-
   font-family: $regular-font;
   font-size: 14px;
   line-height: 21px;
@@ -83,6 +81,7 @@
   position: relative;
 
   padding-left: 50px;
+  margin-bottom: 40px;
 
   &::before {
     content: '';
@@ -125,8 +124,6 @@
   line-height: 26px;
 }
 .reasons__description-subtitle {
-  margin-bottom: 40px;
-
   font-family: $regular-font;
   font-size: 14px;
   line-height: 21px;

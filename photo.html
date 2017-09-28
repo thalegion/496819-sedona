@@ -49,8 +49,10 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page__title">Фото и видео</h1>
-      <p class="page__subtitle">Не можете решиться на путеществие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <div class="page__wrapper">
+        <h1 class="page__title">Фото и видео</h1>
+        <p class="page__subtitle">Не можете решиться на путеществие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
 
       <section class="photos">
         <h2 class="hidden">Фотографии</h2>
@@ -115,39 +117,45 @@
       </section>
 
       <section class="presentation">
-        <h2 class="page__title">Все ещё сомневаетесь?</h2>
-        <p class="page__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз!</p>
+        <div class="page__wrapper">
+          <h2 class="page__title">Все ещё сомневаетесь?</h2>
+          <p class="page__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз!</p>
+        </div>
 
         <video class="presentation__video" preload="auto" poster="../img/video-mobile@1x.jpg" width="320" height="200" >
           <source src="none.webm" type="video/webm">
         </video>
-        <div class="presentation__controls">
-          <button class="presentation__control presentation__control--reload">Начать с начала</button>
-          <button class="presentation__filler" disabled></button>
-          <button class="presentation__control presentation__control--subtitle">Включить субтитры</button>
-          <button class="presentation__control presentation__control--fullscreen">Во весь экран</button>
+        <div class="page__wrapper">
+          <div class="presentation__controls">
+            <button class="presentation__control presentation__control--reload">Начать с начала</button>
+            <button class="presentation__filler" disabled></button>
+            <button class="presentation__control presentation__control--subtitle">Включить субтитры</button>
+            <button class="presentation__control presentation__control--fullscreen">Во весь экран</button>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="socials">
-        <h2 class="page__title socials__title">#Visitsedona</h2>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="https://twitter.com/">Мы в twitter</a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="https://facebook.com/">Мы в facebook</a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="https://youtube.com/">Мы в youtube</a>
-          </li>
-        </ul>
-      </div>
+      <div class="page__wrapper">
+        <div class="socials">
+          <h2 class="page__title socials__title">#Visitsedona</h2>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--twitter" href="https://twitter.com/">Мы в twitter</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="https://facebook.com/">Мы в facebook</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--youtube" href="https://youtube.com/">Мы в youtube</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/">Разработано</a>
+        <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/">Разработано</a>
+        </div>
       </div>
     </footer>
 

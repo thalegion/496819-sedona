@@ -49,17 +49,21 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page__title">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
-      <p class="page__subtitle page__subtitle--small">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+      <div class="page__wrapper">
+        <h1 class="page__title">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+        <p class="page__subtitle page__subtitle--small">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+      </div>
 
       <section class="reasons">
         <h2 class="hidden">Причины</h2>
 
         <div class="reasons__list">
           <div class="reasons__item">
-            <p class="reasons__title">Настоящий городок</p>
-            <p class="reasons__number">№1</p>
-            <p class="reasons__subtitle">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="page__wrapper">
+              <p class="reasons__title">Настоящий городок</p>
+              <p class="reasons__number">№1</p>
+              <p class="reasons__subtitle">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             <img class="reasons__image" src="../img/main-city-mobile@1x.jpg" width="320" height="260" alt="Туристический городок">
             <ul class="reasons__description-list">
               <li class="reasons__description-item reasons__description-item--house">
@@ -77,57 +81,69 @@
             </ul>
           </div>
           <div class="reasons__item">
-            <p class="reasons__title">Там есть мост дьявола</p>
-            <p class="reasons__number">№2</p>
-            <p class="reasons__subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <div class="page__wrapper">
+              <p class="reasons__title">Там есть мост дьявола</p>
+              <p class="reasons__number">№2</p>
+              <p class="reasons__subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
             <img class="reasons__image" src="../img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
           </div>
           <div class="reasons__item reasons__item--small">
-            <p class="reasons__title">Небольшая площадь</p>
-            <p class="reasons__number">№3</p>
-            <p class="reasons__subtitle">Все интересные места находятся очень близко</p>
+            <div class="page__wrapper">
+              <p class="reasons__title">Небольшая площадь</p>
+              <p class="reasons__number">№3</p>
+              <p class="reasons__subtitle">Все интересные места находятся очень близко</p>
+            </div>
           </div>
           <div class="reasons__item reasons__item--small">
-            <p class="reasons__title">Красивая дорога</p>
-            <p class="reasons__number">№4</p>
-            <p class="reasons__subtitle">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            <div class="page__wrapper">
+              <p class="reasons__title">Красивая дорога</p>
+              <p class="reasons__number">№4</p>
+              <p class="reasons__subtitle">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </div>
           </div>
           <div class="reasons__item reasons__item--small">
-            <p class="reasons__title">Мало туристов</p>
-            <p class="reasons__number">№5</p>
-            <p class="reasons__subtitle">Большинство едет в гранд каньон и толпится там</p>
+            <div class="page__wrapper">
+              <p class="reasons__title">Мало туристов</p>
+              <p class="reasons__number">№5</p>
+              <p class="reasons__subtitle">Большинство едет в гранд каньон и толпится там</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="map">
-        <h2 class="page__title page__title--small">Заинтересовались?</h2>
-        <p class="page__subtitle">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="page__wrapper">
+          <h2 class="page__title page__title--small">Заинтересовались?</h2>
+          <p class="page__subtitle">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
-        <a class="button map__button" href="/form.html">Найти гостиницу</a>
+          <a class="button map__button" href="/form.html">Найти гостиницу</a>
+        </div>
 
         <img class="map__frame" src="../img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="socials">
-        <h2 class="page__title socials__title">#Visitsedona</h2>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="https://twitter.com/">Мы в twitter</a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="https://facebook.com/">Мы в facebook</a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="https://youtube.com/">Мы в youtube</a>
-          </li>
-        </ul>
-      </div>
+      <div class="page__wrapper">
+        <div class="socials">
+          <h2 class="page__title socials__title">#Visitsedona</h2>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--twitter" href="https://twitter.com/">Мы в twitter</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="https://facebook.com/">Мы в facebook</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--youtube" href="https://youtube.com/">Мы в youtube</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/">Разработано</a>
+        <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/">Разработано</a>
+        </div>
       </div>
     </footer>
 
