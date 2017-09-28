@@ -101,15 +101,14 @@
     width: 40px;
     height: 45px;
 
-    background-color: $main-background;
-    mask-repeat: no-repeat;
-    mask-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
 .reasons__description-item--house {
   &::before {
-    mask-image: url("../img/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
   }
 }
 
@@ -117,13 +116,13 @@
   &::before {
     top: -15px;
 
-    mask-image: url("../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
   }
 }
 
 .reasons__description-item--food {
   &::before {
-    mask-image: url("../img/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
   }
 }
 
