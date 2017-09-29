@@ -1,0 +1,55 @@
+.page-header__logo {
+  position: relative;
+  z-index: 2;
+
+  height: 56px; //пофиксить
+
+  box-shadow: 0 -2px 1px -1px rgba(0, 0, 0, 0.6);
+}
+
+.page-header__menu-toggle {
+  font-size: 0;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-color: $main-background;
+    mask-image: url("../img/icon-menu.svg");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+}
+
+.page-header__introduction {
+  position: relative;
+
+  padding: 55px 20px 70px;
+  margin-bottom: 45px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  &--main {
+    padding: 90px 20px 65px;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 26px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,32 @@
+.copyright {
+  font-family: $regular-font;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.copyright__link {
+  position: relative;
+
+  padding-right: 40px;
+}
+
+.copyright__icon {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: -8px;
+
+  width: 27px;
+  height: 34px;
+
+  fill: #000000;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: $main-background;
+}
+
+.copyright__link:active .copyright__icon {
+  fill: #b2b2b2;
+}

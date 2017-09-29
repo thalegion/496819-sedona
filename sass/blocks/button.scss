@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+
+  font-family: $bold-font;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  background-color: $main-background;
+  color: #ffffff;
+
+  &--small {
+    width: auto;
+    padding: 20px 80px;
+  }
+
+  &:hover {
+    background-color: $main-background-hover;
+  }
+
+  &:active {
+    background-color: $main-background-down;
+    color: #88b6d1;
+  }
+}
