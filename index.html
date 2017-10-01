@@ -7,164 +7,177 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page">
+    <div class="container">
+      <div class="container__row">
+        <header class="page-header">
+          <nav class="menu">
+            <button class="menu__close">Закрыть меню</button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--first button" href="/">
+                  Главная
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link button" href="/photo.html">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="menu__item menu__item--logo">
+                <div class="logo">
+                  <a class="logo__link">
+                    <img class="logo__image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
+                  </a>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link button" href="/form.html">
+                  Форма отзыва
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--last button" href="https://htmlacademy.ru" target="_blank">
+                  Html academy
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-    <header class="page-header">
-      <nav class="menu">
-        <button class="menu__close">Закрыть меню</button>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link menu__link--first button" href="/">
-              Главная
+          <div class="logo page-header__logo">
+            <div class="logo__filler"></div>
+            <a class="logo__link">
+              <img class="logo__image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
             </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link button" href="/photo.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link button" href="/form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--last button" href="https://htmlacademy.ru" target="_blank">
-              Html academy
-            </a>
-          </li>
-        </ul>
-      </nav>
+            <button class="page-header__menu-toggle">Открыть меню</button>
+          </div>
 
-      <div class="logo page-header__logo">
-        <div class="logo__filler"></div>
-        <a class="logo__link">
-          <img class="logo__image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
-        </a>
-        <button class="page-header__menu-toggle">Открыть меню</button>
+          <div class="page-header__introduction">
+            <img class="page-header__image" src="../img/text-sedona.svg" width="230" height="40" alt="Седона">
+          </div>
+        </header>
       </div>
 
-      <div class="page-header__introduction page-header__introduction--main">
-        <img class="page-header__image" src="../img/text-sedona-index.svg" width="280" height="215" alt="Седона">
-      </div>
-    </header>
+      <main class="page-main">
+        <div class="page__container">
+          <h1 class="page__title">Седона - небольшой городок в аризоне,<br class="br br--tablet"> заслуживающий большего!</h1>
+          <p class="page__subtitle page__subtitle--small">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+        </div>
 
-    <main class="page-main">
-      <div class="page__container">
-        <h1 class="page__title">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
-        <p class="page__subtitle page__subtitle--small">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
-      </div>
+        <section class="reasons">
+          <h2 class="hidden">Причины</h2>
 
-      <section class="reasons">
-        <h2 class="hidden">Причины</h2>
-
-        <div class="reasons__list">
-          <div class="reasons__item">
-            <div class="page__container">
-              <p class="reasons__title">Настоящий городок</p>
-              <p class="reasons__number">№1</p>
-              <p class="reasons__subtitle">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="container__row">
+            <div class="reasons__list">
+              <div class="reasons__item">
+                <div class="page__container reasons__info">
+                  <p class="reasons__title">Настоящий городок</p>
+                  <p class="reasons__number">№1</p>
+                  <p class="reasons__subtitle">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <img class="reasons__image" src="../img/main-city-mobile@1x.jpg" width="320" height="260" alt="Туристический городок">
+                <ul class="reasons__description-list">
+                  <li class="reasons__description-item reasons__description-item--house">
+                    <p class="reasons__description-title">Жильё</p>
+                    <p class="reasons__description-subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </li>
+                  <li class="reasons__description-item reasons__description-item--gift">
+                    <p class="reasons__description-title">Сувениры</p>
+                    <p class="reasons__description-subtitle">Не только китайского, но и местного производства!</p>
+                  </li>
+                  <li class="reasons__description-item reasons__description-item--food">
+                    <p class="reasons__description-title">Еда</p>
+                    <p class="reasons__description-subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="reasons__item">
+                <div class="page__container reasons__info reasons__info--end">
+                  <p class="reasons__title">Там есть мост дьявола</p>
+                  <p class="reasons__number">№2</p>
+                  <p class="reasons__subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+                <img class="reasons__image" src="../img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+              </div>
+              <div class="reasons__item reasons__item--small">
+                <div class="page__container reasons__info">
+                  <p class="reasons__title">Небольшая площадь</p>
+                  <p class="reasons__number">№3</p>
+                  <p class="reasons__subtitle">Все интересные места находятся очень близко</p>
+                </div>
+              </div>
+              <div class="reasons__item reasons__item--small">
+                <div class="page__container reasons__info">
+                  <p class="reasons__title">Красивая<br class="br br--tablet"> дорога</p>
+                  <p class="reasons__number">№4</p>
+                  <p class="reasons__subtitle">Ехать в седону из лас-вегаса совсем не скучно!</p>
+                </div>
+              </div>
+              <div class="reasons__item reasons__item--small">
+                <div class="page__container reasons__info">
+                  <p class="reasons__title">Мало<br class="br br--tablet"> туристов</p>
+                  <p class="reasons__number">№5</p>
+                  <p class="reasons__subtitle">Большинство едет в гранд каньон и толпится там</p>
+                </div>
+              </div>
             </div>
-            <img class="reasons__image" src="../img/main-city-mobile@1x.jpg" width="320" height="260" alt="Туристический городок">
-            <ul class="reasons__description-list">
-              <li class="reasons__description-item reasons__description-item--house">
-                <p class="reasons__description-title">Жильё</p>
-                <p class="reasons__description-subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+        </section>
+
+        <section class="map">
+          <div class="page__container map__container">
+            <h2 class="page__title page__title--small map__title">Заинтересовались?</h2>
+            <p class="page__subtitle">Укажите предпологаемые даты поездки,<br class="br br--tablet"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+
+            <a class="button map__button" href="/form.html">Найти гостиницу</a>
+          </div>
+
+          <div class="container__row">
+            <img class="map__frame" src="../img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page__container page-footer__container">
+          <h2 class="page__title page-footer__title">#Visitsedona</h2>
+          <div class="socials page-footer__socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" href="https://twitter.com/">
+                  <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                    <use href="../img/icon-twitter.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="reasons__description-item reasons__description-item--gift">
-                <p class="reasons__description-title">Сувениры</p>
-                <p class="reasons__description-subtitle">Не только китайского, но и местного производства!</p>
+              <li class="socials__item">
+                <a class="socials__link" href="https://facebook.com/">
+                  <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                    <use href="../img/icon-facebook.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="reasons__description-item reasons__description-item--food">
-                <p class="reasons__description-title">Еда</p>
-                <p class="reasons__description-subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <li class="socials__item">
+                <a class="socials__link" href="https://youtube.com/">
+                  <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                    <use href="../img/icon-youtube.svg#icon-youtube"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
-          <div class="reasons__item">
-            <div class="page__container">
-              <p class="reasons__title">Там есть мост дьявола</p>
-              <p class="reasons__number">№2</p>
-              <p class="reasons__subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-            <img class="reasons__image" src="../img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
-          </div>
-          <div class="reasons__item reasons__item--small">
-            <div class="page__container">
-              <p class="reasons__title">Небольшая площадь</p>
-              <p class="reasons__number">№3</p>
-              <p class="reasons__subtitle">Все интересные места находятся очень близко</p>
-            </div>
-          </div>
-          <div class="reasons__item reasons__item--small">
-            <div class="page__container">
-              <p class="reasons__title">Красивая дорога</p>
-              <p class="reasons__number">№4</p>
-              <p class="reasons__subtitle">Ехать в седону из лас-вегаса совсем не скучно!</p>
-            </div>
-          </div>
-          <div class="reasons__item reasons__item--small">
-            <div class="page__container">
-              <p class="reasons__title">Мало туристов</p>
-              <p class="reasons__number">№5</p>
-              <p class="reasons__subtitle">Большинство едет в гранд каньон и толпится там</p>
-            </div>
+
+          <div class="copyright page-footer__copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/">
+              Разработано
+
+              <svg class="copyright__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                <use href="../img/logo-htmlacademy.svg#logo-htmlacademy"></use>
+              </svg>
+
+            </a>
           </div>
         </div>
-      </section>
-
-      <section class="map">
-        <div class="page__container">
-          <h2 class="page__title page__title--small">Заинтересовались?</h2>
-          <p class="page__subtitle">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-
-          <a class="button map__button" href="/form.html">Найти гостиницу</a>
-        </div>
-
-        <img class="map__frame" src="../img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <div class="page__container">
-        <div class="socials">
-          <h2 class="page__title socials__title">#Visitsedona</h2>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link" href="https://twitter.com/">
-                <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                  <use href="../img/icon-twitter.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="https://facebook.com/">
-                <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                  <use href="../img/icon-facebook.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="https://youtube.com/">
-                <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                  <use href="../img/icon-youtube.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/">
-            Разработано
-
-            <svg class="copyright__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-              <use href="../img/logo-htmlacademy.svg#logo-htmlacademy"></use>
-            </svg>
-
-          </a>
-        </div>
-      </div>
-    </footer>
-
+      </footer>
+    </div>
   </body>
 </html>

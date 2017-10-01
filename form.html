@@ -1,189 +1,209 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-      <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page">
+    <div class="container">
+      <div class="container__row">
+        <header class="page-header">
+          <nav class="menu">
+            <button class="menu__close">Закрыть меню</button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--first button" href="/">
+                  Главная
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link button" href="/photo.html">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="menu__item menu__item--logo">
+                <div class="logo">
+                  <a class="logo__link">
+                    <img class="logo__image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
+                  </a>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link button" href="/form.html">
+                  Форма отзыва
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--last button" href="https://htmlacademy.ru" target="_blank">
+                  Html academy
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-    <header class="page-header">
-      <nav class="menu">
-        <button class="menu__close">Закрыть меню</button>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link menu__link--first button" href="/">
-              Главная
+          <div class="logo page-header__logo">
+            <div class="logo__filler"></div>
+            <a class="logo__link">
+              <img class="logo__image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
             </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link button" href="/photo.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link button" href="/form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--last button" href="https://htmlacademy.ru" target="_blank">
-              Html academy
-            </a>
-          </li>
-        </ul>
-      </nav>
+            <button class="page-header__menu-toggle">Открыть меню</button>
+          </div>
 
-      <div class="logo page-header__logo">
-        <div class="logo__filler"></div>
-        <a class="logo__link">
-          <img class="logo__image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
-        </a>
-        <button class="page-header__menu-toggle">Открыть меню</button>
+          <div class="page-header__introduction">
+            <img class="page-header__image" src="../img/text-sedona.svg" width="230" height="40" alt="Седона">
+          </div>
+        </header>
       </div>
 
-      <div class="page-header__introduction">
-        <img class="page-header__image" src="../img/text-sedona.svg" width="230" height="40" alt="Седона">
-      </div>
-    </header>
-
-    <main class="page-main">
-      <div class="page__container">
-        <h1 class="page__title">Оставьте свой отзыв</h1>
-        <p class="page__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
-
-      <section class="review-form">
-        <h2 class="hidden">Форма отзыва</h2>
-
-        <form class="review-form__form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="review-form__group">
-            <p class="page__title page__title--small">Представьтесь:</p>
-
-            <div class="review-form__dynamic-wrapper">
-              <div class="review-form__dynamic-row">
-                <label class="review-form__label review-form__label--dynamic">Имя*:</label>
-                <input class="review-form__input review-form__input--dynamic" type="text" name="firstname" required>
-              </div>
-            </div>
-            <div class="review-form__dynamic-wrapper">
-              <div class="review-form__dynamic-row">
-                <label class="review-form__label review-form__label--dynamic">Фамилия*:</label>
-                <input class="review-form__input review-form__input--dynamic" type="text" name="lastname" required>
-              </div>
-            </div>
-            <div class="review-form__dynamic-wrapper">
-              <div class="review-form__dynamic-row">
-                <label class="review-form__label review-form__label--dynamic">Отчество:</label>
-                <input class="review-form__input review-form__input--dynamic" type="text" name="midname">
-              </div>
-            </div>
-          </div>
-
-          <div class="review-form__group">
-            <p class="page__title page__title--small">Контактная информация:</p>
-
-            <label class="review-form__label" for="phone">
-              Контактный телефон*:
-            </label>
-            <div class="review-form__input-addon review-form__input-addon--phone">
-              <input class="review-form__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
-            </div>
-
-            <label class="review-form__label" for="email">
-              Электронная почта*:
-            </label>
-            <div class="review-form__input-addon review-form__input-addon--email">
-              <input class="review-form__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-            </div>
-          </div>
-
-          <div class="review-form__group">
-            <p class="page__title">Ваше общее впечатление:</p>
-
-            <div class="review-form__radio-list">
-              <input class="review-form__radio" type="radio" name="impression" value="Скорее положительное" id="impression-1" checked>
-              <label class="review-form__radio-control" for="impression-1">Скорее положительное</label>
-
-              <input class="review-form__radio" type="radio" name="impression" value="Скорее отрицательное" id="impression-2">
-              <label class="review-form__radio-control" for="impression-2">Скорее отрицательное</label>
-
-              <input class="review-form__radio" type="radio" name="impression" value="Затрудняюсь ответить" id="impression-3">
-              <label class="review-form__radio-control" for="impression-3">Затрудняюсь ответить</label>
-            </div>
-          </div>
-
-          <div class="review-form__group">
-            <p class="page__title page__title--extra-small">Посещенные достопримечательности:</p>
-
-            <div class="review-form__checkbox-list">
-              <input class="review-form__checkbox" type="checkbox" name="places" value="Мост Дьявола" id="places-1" checked>
-              <label class="review-form__checkbox-control" for="places-1">Мост Дьявола</label>
-
-              <input class="review-form__checkbox" type="checkbox" name="places" value="Слайд-парк" id="places-2" checked>
-              <label class="review-form__checkbox-control" for="places-2">Слайд-парк</label>
-
-              <input class="review-form__checkbox" type="checkbox" name="places" value="Гора-Колокол" id="places-3">
-              <label class="review-form__checkbox-control" for="places-3">Гора-Колокол</label>
-
-              <input class="review-form__checkbox" type="checkbox" name="places" value="Красные скалы" id="places-4" checked>
-              <label class="review-form__checkbox-control" for="places-4">Красные скалы</label>
-            </div>
-          </div>
-
-          <div class="review-form__group">
-            <p class="page__title page__title--extra-small">Опишите свои эмоции:</p>
-
-            <textarea class="review-form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-
-            <button class="review-form__submit button" >Отправить отзыв</button>
-          </div>
-        </form>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <div class="page__container">
-        <div class="socials">
-          <h2 class="page__title socials__title">#Visitsedona</h2>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link" href="https://twitter.com/">
-                <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                  <use href="../img/icon-twitter.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="https://facebook.com/">
-                <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                  <use href="../img/icon-facebook.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="https://youtube.com/">
-                <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                  <use href="../img/icon-youtube.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+      <main class="page-main">
+        <div class="page__container">
+          <h1 class="page__title">Оставьте свой отзыв</h1>
+          <p class="page__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br class="br br--tablet"> а также о посещенных вами достопримечательностях</p>
         </div>
 
-        <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/">
-            Разработано
+        <section class="review-form">
+          <h2 class="hidden">Форма отзыва</h2>
 
-            <svg class="copyright__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-              <use href="../img/logo-htmlacademy.svg#logo-htmlacademy"></use>
-            </svg>
+          <form class="review-form__form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="review-form__group review-form__group--into">
+              <p class="page__title page__title--small">Представьтесь:</p>
 
-          </a>
+              <div class="review-form__dynamic-wrapper">
+                <div class="review-form__dynamic-row">
+                  <label class="review-form__label review-form__label--dynamic">Имя*:</label>
+                  <input class="review-form__input review-form__input--dynamic" type="text" name="firstname" required>
+                </div>
+              </div>
+              <div class="review-form__dynamic-wrapper">
+                <div class="review-form__dynamic-row">
+                  <label class="review-form__label review-form__label--dynamic">Фамилия*:</label>
+                  <input class="review-form__input review-form__input--dynamic" type="text" name="lastname" required>
+                </div>
+              </div>
+              <div class="review-form__dynamic-wrapper">
+                <div class="review-form__dynamic-row">
+                  <label class="review-form__label review-form__label--dynamic">Отчество:</label>
+                  <input class="review-form__input review-form__input--dynamic" type="text" name="midname">
+                </div>
+              </div>
+            </div>
+
+            <div class="review-form__group review-form__group--contacts">
+              <p class="page__title page__title--small review-form__title">Контактная информация:</p>
+
+              <div class="review-form__contacts">
+                <div class="review-form__contact-field">
+                  <label class="review-form__label" for="phone">
+                    <span class="hidden hidden--desktop">Контактный </span>телефон*:
+                  </label>
+                  <div class="review-form__input-addon review-form__input-addon--phone">
+                    <input class="review-form__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+                  </div>
+                </div>
+
+                <div class="review-form__contact-field">
+                  <label class="review-form__label" for="email">
+                    Электронная почта*:
+                  </label>
+                  <div class="review-form__input-addon review-form__input-addon--email">
+                    <input class="review-form__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-form__group review-form__group--impression">
+              <p class="page__title">Ваше общее впечатление:</p>
+
+              <div class="review-form__radio-list">
+                <input class="review-form__radio" type="radio" name="impression" value="Скорее положительное" id="impression-1" checked>
+                <label class="review-form__radio-control" for="impression-1">Скорее положительное</label>
+
+                <input class="review-form__radio" type="radio" name="impression" value="Скорее отрицательное" id="impression-2">
+                <label class="review-form__radio-control" for="impression-2">Скорее отрицательное</label>
+
+                <input class="review-form__radio" type="radio" name="impression" value="Затрудняюсь ответить" id="impression-3">
+                <label class="review-form__radio-control" for="impression-3">Затрудняюсь ответить</label>
+              </div>
+            </div>
+
+            <div class="review-form__group review-form__group--places">
+              <p class="page__title page__title--extra-small review-form__title">Посещенные<br class="br br--tablet"> достопримечательности:</p>
+
+              <div class="review-form__checkbox-list">
+                <input class="review-form__checkbox" type="checkbox" name="places" value="Мост Дьявола" id="places-1" checked>
+                <label class="review-form__checkbox-control" for="places-1">Мост Дьявола</label>
+
+                <input class="review-form__checkbox" type="checkbox" name="places" value="Слайд-парк" id="places-2" checked>
+                <label class="review-form__checkbox-control" for="places-2">Слайд-парк</label>
+
+                <input class="review-form__checkbox" type="checkbox" name="places" value="Гора-Колокол" id="places-3">
+                <label class="review-form__checkbox-control" for="places-3">Гора-Колокол</label>
+
+                <input class="review-form__checkbox" type="checkbox" name="places" value="Красные скалы" id="places-4" checked>
+                <label class="review-form__checkbox-control" for="places-4">Красные скалы</label>
+              </div>
+            </div>
+
+            <div class="review-form__group  review-form__group--emotions">
+              <p class="page__title page__title--extra-small review-form__title">Опишите свои эмоции:</p>
+
+              <textarea class="review-form__textarea" placeholder="Опишите подробно все свои восторги" name="emotions"></textarea>
+
+              <div class="review-form__controls">
+                <button class="review-form__submit button" >Отправить отзыв</button>
+                <span class="review-form__notification hidden hidden--mobile">* - обязательные поля</span>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page__container page-footer__container">
+          <h2 class="page__title page-footer__title">#Visitsedona</h2>
+          <div class="socials page-footer__socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" href="https://twitter.com/">
+                  <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                    <use href="../img/icon-twitter.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://facebook.com/">
+                  <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                    <use href="../img/icon-facebook.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://youtube.com/">
+                  <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                    <use href="../img/icon-youtube.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="copyright page-footer__copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/">
+              Разработано
+
+              <svg class="copyright__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                <use href="../img/logo-htmlacademy.svg#logo-htmlacademy"></use>
+              </svg>
+
+            </a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+
 
     <!-- modal--opened чтобы открыть -->
     <div class="modal">
@@ -194,10 +214,10 @@
       </div>
     </div>
 
-    <div class="modal">
+    <div class="modal modal--large">
       <div class="modal__body">
         <p class="page__title">Ваш отзыв отправлен!</p>
-        <p class="page__subtitle page__subtitle--small">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="page__subtitle page__subtitle--small">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br class="br br--tablet"> В ближайшее время мы опубликуем его на сайте.</p>
       </div>
       <footer class="modal__footer">
         <button class="modal__close button">Закрыть окно</button>
