@@ -170,12 +170,13 @@
 
   .reasons__info {
     flex-basis: 256px;
-    padding: 45px 35px 0px;
+    padding: 45px 35px 0;
 
     &--end {
       order: 1;
     }
   }
+
   .reasons__image {
     flex-grow: 1;
     margin-top: 0;
@@ -213,6 +214,7 @@
   .reasons__info {
     flex-basis: 400px;
   }
+
   .reasons__item--small {
     flex-basis: 400px;
   }
