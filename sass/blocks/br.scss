@@ -1,0 +1,9 @@
+.br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .br--tablet {
+    display: block;
+  }
+}

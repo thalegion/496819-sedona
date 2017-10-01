@@ -7,9 +7,11 @@
 }
 
 .presentation__controls {
-  background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
+
+  background-color: #f2f2f2;
 }
 
 .presentation__control {
@@ -17,6 +19,15 @@
   height: 65px;
 
   font-size: 0;
+
+  cursor: pointer;
+
+  &--timeline {
+    width: 70px;
+    height: 65px;
+
+    pointer-events: none;
+  }
 }
 
 .presentation__control:hover .presentation__icon {
@@ -31,7 +42,42 @@
   fill: #5c6870;
 }
 
-.presentation__filler {
-  width: 70px;
-  height: 65px;
+@media (min-width: $tablet-width) {
+  .presentation__controls {
+    position: relative;
+    z-index: 2;
+
+    margin-top: -65px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .presentation__icon {
+    fill: #ffffff;
+  }
+
+  .presentation__control--timeline {
+    position: relative;
+
+    flex-basis: 390px;
+    flex-grow: 1;
+
+    pointer-events: auto;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 100%;
+      height: 3px;
+
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation {
+    padding: 70px 200px 0;
+  }
 }

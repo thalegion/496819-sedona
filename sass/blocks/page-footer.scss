@@ -1,3 +1,25 @@
 .page-footer {
   padding-bottom: 23px;
 }
+
+.page-footer__title {
+  font-size: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__title {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__title {
+    flex-basis: 400px;
+  }
+}

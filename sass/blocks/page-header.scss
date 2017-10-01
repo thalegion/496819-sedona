@@ -53,3 +53,19 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__menu-toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__introduction {
+    background-size: cover;
+  }
+}
