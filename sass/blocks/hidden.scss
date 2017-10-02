@@ -1,3 +1,23 @@
 .hidden {
   display: none;
+
+  &--desktop {
+    display: initial;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hidden--mobile {
+    display: initial;
+  }
+
+  .hidden--desktop {
+    display: initial;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hidden--desktop {
+    display: none;
+  }
 }

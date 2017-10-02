@@ -4,5 +4,20 @@
 
 .map__frame {
   margin-top: 50px;
+  margin-bottom: 40px;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .map__title {
+    font-size: 30px;
+  }
+
+  .map__container {
+    width: 460px;
+  }
+
+  .map__frame {
+    width: 100%;
+  }
 }

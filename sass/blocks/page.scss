@@ -36,3 +36,14 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page__container {
+    width: 100%;
+  }
+
+  .page__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

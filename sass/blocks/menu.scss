@@ -24,6 +24,10 @@
   }
 }
 
+.menu__item--logo {
+  display: none;
+}
+
 .menu__link {
   width: 100%;
   padding: 15px;
@@ -36,5 +40,45 @@
 
   &:not(.menu__link--last) {
     border-bottom: 1px solid #678fa8;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu__close {
+    display: none;
+  }
+
+  .menu__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu__item--logo {
+    display: block;
+    height: 57px;
+  }
+
+  .menu__link {
+    font-size: 14px;
+
+    background-color: transparent;
+    color: #000000;
+
+    &:not(.menu__link--first) {
+      border-top: 0;
+    }
+
+    &:not(.menu__link--last) {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      color: #81b3d2;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: #dadada;
+    }
   }
 }
