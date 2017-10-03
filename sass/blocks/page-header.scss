@@ -27,8 +27,8 @@
 .page-header__introduction {
   position: relative;
 
-  padding: 55px 20px 70px;
-  margin-bottom: 45px;
+  padding: 52px 20px 58px;
+  margin-bottom: 40px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom;
@@ -63,6 +63,7 @@
     position: absolute;
     top: 0;
     left: 50%;
+    z-index: 3;
 
     box-shadow: none;
 
@@ -75,13 +76,37 @@
   }
 
   .page-header__introduction {
-    padding: 95px 0 120px;
-    margin-bottom: 75px;
+    padding: 95px 0 110px;
+    margin-bottom: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__introduction {
+    padding: 103px 0 114px;
+    margin-bottom: 107px;
+
     background-size: cover;
+  }
+
+  .page-header__logo {
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -70px;
+      left: -20px;
+      z-index: -1;
+
+      display: block;
+      width: 140px;
+      height: 140px;
+
+      background-color: #81b3d2;
+      border-radius: 10px 0;
+
+      transform: rotate(45deg) skew(0deg);
+    }
   }
 }

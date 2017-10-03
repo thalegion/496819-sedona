@@ -1,5 +1,5 @@
 .presentation {
-  padding-top: 40px;
+  padding-top: 32px;
 }
 
 .presentation__video {
@@ -23,7 +23,7 @@
   cursor: pointer;
 
   &--timeline {
-    width: 70px;
+    width: 125px;
     height: 65px;
 
     pointer-events: none;
@@ -48,6 +48,7 @@
     z-index: 2;
 
     margin-top: -65px;
+    margin-bottom: 75px;
 
     background-color: rgba(0, 0, 0, 0.6);
   }
@@ -76,7 +77,7 @@
   }
 
   .presentation {
-    padding-top: 65px;
+    padding-top: 60px;
   }
 
   .presentation__video {
@@ -87,6 +88,10 @@
 
 @media (min-width: $desktop-width) {
   .presentation {
-    padding: 70px 200px 0;
+    padding: 67px 80px 0;
+  }
+
+  .presentation__controls {
+    margin-bottom: 119px;
   }
 }

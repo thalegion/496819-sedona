@@ -1,17 +1,17 @@
 .page {
   font-family: $regular-font;
-  line-height: 26px;
+  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .page__container {
-  width: 280px;
+  width: 270px;
   margin: 0 auto;
 }
 
 .page__title {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 
   font-family: $bold-font;
   font-size: 18px;
@@ -27,13 +27,17 @@
 }
 
 .page__subtitle {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   font-size: 14px;
   line-height: inherit;
 
   &--small {
     margin-bottom: 0;
+  }
+
+  &--presentation {
+    margin-bottom: 34px;
   }
 }
 
@@ -44,16 +48,16 @@
 
   .page__title {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 35px;
   }
 
   .page__subtitle {
     &--photo {
-      margin-bottom: 75px;
+      margin-bottom: 67px;
     }
 
     &--presentation {
-      margin-bottom: 80px;
+      margin-bottom: 72px;
     }
   }
 }
