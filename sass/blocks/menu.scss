@@ -53,9 +53,16 @@
     justify-content: space-around;
   }
 
-  .menu__item--logo {
-    display: block;
-    height: 57px;
+  .menu__item {
+    flex-basis: 25%;
+
+    &:nth-child(2) {
+      margin-right: 50px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 50px;
+    }
   }
 
   .menu__link {

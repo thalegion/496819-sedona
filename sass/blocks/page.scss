@@ -46,4 +46,14 @@
     font-size: 30px;
     line-height: 40px;
   }
+
+  .page__subtitle {
+    &--photo {
+      margin-bottom: 75px;
+    }
+
+    &--presentation {
+      margin-bottom: 80px;
+    }
+  }
 }

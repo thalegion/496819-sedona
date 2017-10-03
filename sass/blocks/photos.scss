@@ -84,6 +84,10 @@
     margin-bottom: 0;
   }
 
+  .photos__likes {
+    transform: translateY(50%);
+  }
+
   .photos__info {
     display: flex;
     flex-direction: column;
@@ -94,6 +98,18 @@
     padding: 20px;
 
     background-color: #f2f2f2;
+  }
+
+  .photos__item:first-child .photos__image {
+    height: 400px;
+  }
+
+  .photos__item:not(:first-child) .photos__image {
+    height: 265px;
+  }
+
+  .photos__item:nth-child(2n+1) .photos__info {
+    background-color: #eaeaea;
   }
 }
 

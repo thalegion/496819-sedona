@@ -60,7 +60,23 @@
   }
 
   .page-header__logo {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    box-shadow: none;
+
+    transform: translateX(-50%);
+  }
+
+  .page-header__image {
+    width: 460px;
+    height: 80px;
+  }
+
+  .page-header__introduction {
+    padding: 95px 0 120px;
+    margin-bottom: 75px;
   }
 }
 
