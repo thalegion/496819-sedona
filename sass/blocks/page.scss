@@ -6,7 +6,7 @@
 }
 
 .page__container {
-  width: 270px;
+  width: 275px;
   margin: 0 auto;
 }
 
@@ -18,7 +18,7 @@
   line-height: inherit;
 
   &--small {
-    margin-bottom: 30px;
+    margin-bottom: 21px;
   }
 
   &--extra-small {
@@ -39,6 +39,10 @@
   &--presentation {
     margin-bottom: 34px;
   }
+
+  &--review {
+    margin-bottom: 17px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -49,6 +53,22 @@
   .page__title {
     font-size: 30px;
     line-height: 35px;
+
+    &--impression {
+      margin-bottom: 55px;
+
+      font-size: 21px;
+    }
+
+    &--intro {
+      margin-bottom: 55px;
+
+      font-size: 21px;
+    }
+
+    &--emotions {
+      margin-bottom: 55px;
+    }
   }
 
   .page__subtitle {
@@ -58,6 +78,22 @@
 
     &--presentation {
       margin-bottom: 72px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__title {
+    &--impression {
+      text-align: center;
+    }
+
+    &--intro {
+      text-align: center;
+    }
+
+    &--contacts {
+      margin-bottom: 68px;
     }
   }
 }

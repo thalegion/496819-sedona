@@ -23,13 +23,6 @@
                   Фото и видео
                 </a>
               </li>
-              <li class="menu__item menu__item--logo">
-                <div class="logo">
-                  <a class="logo__link">
-                    <img class="logo__image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
-                  </a>
-                </div>
-              </li>
               <li class="menu__item">
                 <a class="menu__link button" href="/form.html">
                   Форма отзыва
@@ -60,7 +53,7 @@
       <main class="page-main">
         <div class="page__container">
           <h1 class="page__title">Оставьте свой отзыв</h1>
-          <p class="page__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br class="br br--tablet"> а также о посещенных вами достопримечательностях</p>
+          <p class="page__subtitle page__subtitle--review">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br class="br br--tablet"> а также о посещенных вами достопримечательностях</p>
         </div>
 
         <section class="review-form">
@@ -68,7 +61,7 @@
 
           <form class="review-form__form" action="https://echo.htmlacademy.ru" method="POST">
             <div class="review-form__group review-form__group--into">
-              <p class="page__title page__title--small">Представьтесь:</p>
+              <p class="page__title page__title--small page__title--intro">Представьтесь:</p>
 
               <div class="review-form__dynamic-wrapper">
                 <div class="review-form__dynamic-row">
@@ -91,20 +84,20 @@
             </div>
 
             <div class="review-form__group review-form__group--contacts">
-              <p class="page__title page__title--small review-form__title">Контактная информация:</p>
+              <p class="page__title page__title--small review-form__title page__title--contacts">Контактная информация:</p>
 
               <div class="review-form__contacts">
                 <div class="review-form__contact-field">
-                  <label class="review-form__label" for="phone">
+                  <label class="review-form__label review-form__label--intent" for="phone">
                     <span class="hidden hidden--desktop">Контактный </span>телефон*:
                   </label>
                   <div class="review-form__input-addon review-form__input-addon--phone">
-                    <input class="review-form__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+                    <input class="review-form__input review-form__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
                   </div>
                 </div>
 
                 <div class="review-form__contact-field">
-                  <label class="review-form__label" for="email">
+                  <label class="review-form__label review-form__label--intent" for="email">
                     Электронная почта*:
                   </label>
                   <div class="review-form__input-addon review-form__input-addon--email">
@@ -115,7 +108,7 @@
             </div>
 
             <div class="review-form__group review-form__group--impression">
-              <p class="page__title">Ваше общее впечатление:</p>
+              <p class="page__title page__title--impression">Ваше общее впечатление:</p>
 
               <div class="review-form__radio-list">
                 <input class="review-form__radio" type="radio" name="impression" value="Скорее положительное" id="impression-1" checked>
@@ -148,7 +141,7 @@
             </div>
 
             <div class="review-form__group  review-form__group--emotions">
-              <p class="page__title page__title--extra-small review-form__title">Опишите свои эмоции:</p>
+              <p class="page__title page__title--extra-small review-form__title page__title--emotions">Опишите свои эмоции:</p>
 
               <textarea class="review-form__textarea" placeholder="Опишите подробно все свои восторги" name="emotions"></textarea>
 
