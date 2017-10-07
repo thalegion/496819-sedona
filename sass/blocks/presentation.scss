@@ -42,9 +42,13 @@
     position: relative;
     z-index: 2;
 
-    margin-top: -65px;
+    margin-top: -92px;
 
     background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .presentation__control {
+    height: 92px;
   }
 
   .presentation__icon {
