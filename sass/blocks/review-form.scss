@@ -247,7 +247,7 @@
   width: 100%;
   padding: 12px 18px;
   min-height: 160px;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
 
   font-family: $bold-font;
   font-size: 18px;
@@ -272,6 +272,7 @@
 
 .review-form__submit {
   width: 100%;
+  padding: 17px;
 }
 
 .review-form__notification {
@@ -382,7 +383,7 @@
 
   .review-form__submit {
     width: auto;
-    padding: 20px 70px;
+    padding: 16px 70px;
   }
 
   .review-form__radio-control {
