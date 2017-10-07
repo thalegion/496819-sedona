@@ -175,10 +175,6 @@
     flex-wrap: wrap;
   }
 
-  .reasons__info {
-    width: 100%;
-  }
-
   .reasons__subtitle {
     line-height: 24px;
   }
@@ -199,6 +195,7 @@
   }
 
   .reasons__info {
+    width: 100%;
     flex-basis: 256px;
     padding: 45px 35px 0;
 
@@ -241,11 +238,9 @@
     }
   }
 
-  .reasons__description-item--gift {
-    &::before {
-      background-size: 63px;
-      background-position: top left;
-    }
+  .reasons__description-item--gift::before {
+    background-size: 63px;
+    background-position: top left;
   }
 
   .reasons__description-subtitle {
