@@ -6,7 +6,7 @@
 .menu__close {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 20px;
 
   font-size: 0;
 
@@ -53,9 +53,16 @@
     justify-content: space-around;
   }
 
-  .menu__item--logo {
-    display: block;
-    height: 57px;
+  .menu__item {
+    flex-basis: 25%;
+
+    &:nth-child(2) {
+      margin-right: 75px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 75px;
+    }
   }
 
   .menu__link {
@@ -79,6 +86,18 @@
 
     &:active {
       color: #dadada;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu__item {
+    &:nth-child(2) {
+      margin-right: 120px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 120px;
     }
   }
 }

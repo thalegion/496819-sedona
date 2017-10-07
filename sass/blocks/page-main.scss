@@ -1,0 +1,39 @@
+.page-main {
+  margin-bottom: 80px;
+
+  &--review {
+    margin-bottom: 66px;
+  }
+
+  &--main {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    margin-bottom: 75px;
+
+    &--review {
+      margin-bottom: 92px;
+    }
+
+    &--main {
+      margin-bottom: 37px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    margin-bottom: 120px;
+
+    &--review {
+      margin-bottom: 98px;
+    }
+
+    &--main {
+      margin-bottom: 37px;
+    }
+  }
+}

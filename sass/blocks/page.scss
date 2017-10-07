@@ -1,24 +1,44 @@
 .page {
   font-family: $regular-font;
-  line-height: 26px;
+  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  &--main {
+    line-height: 26px;
+  }
 }
 
 .page__container {
-  width: 280px;
+  width: 275px;
   margin: 0 auto;
+
+  &--main {
+    width: 265px;
+  }
+
+  &--photo {
+    margin-bottom: 27px;
+  }
+
+  &--presentation {
+    margin-bottom: 34px;
+  }
+
+  &--review {
+    margin-bottom: 18px;
+  }
 }
 
 .page__title {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 
   font-family: $bold-font;
   font-size: 18px;
   line-height: inherit;
 
   &--small {
-    margin-bottom: 30px;
+    margin-bottom: 21px;
   }
 
   &--extra-small {
@@ -27,7 +47,7 @@
 }
 
 .page__subtitle {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   font-size: 14px;
   line-height: inherit;
@@ -35,15 +55,84 @@
   &--small {
     margin-bottom: 0;
   }
+
+  &--presentation {
+    margin-bottom: 0;
+  }
+
+  &--photo {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page__container {
     width: 100%;
+
+    &--main {
+      margin-bottom: 47px;
+    }
+
+    &--photo {
+      margin-bottom: 67px;
+    }
+
+    &--presentation {
+      margin-bottom: 72px;
+    }
   }
 
   .page__title {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 35px;
+
+    &--impression {
+      margin-bottom: 55px;
+
+      font-size: 21px;
+    }
+
+    &--intro {
+      margin-bottom: 55px;
+
+      font-size: 21px;
+    }
+
+    &--emotions {
+      margin-bottom: 55px;
+    }
+
+    &--main {
+      font-size: 21px;
+      line-height: 30px;
+    }
+  }
+
+  .page__subtitle {
+    &--map {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__title {
+    &--impression {
+      text-align: center;
+    }
+
+    &--contacts {
+      margin-bottom: 68px;
+    }
+  }
+
+  .page__container {
+    &--photo {
+      margin-bottom: 69px;
+    }
+
+    &--presentation {
+      margin-bottom: 68px;
+    }
   }
 }

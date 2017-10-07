@@ -1,11 +1,18 @@
-.map {
-  padding-top: 30px;
+.map__container {
+  margin-bottom: 50px;
 }
 
 .map__frame {
-  margin-top: 50px;
-  margin-bottom: 40px;
   display: block;
+}
+
+.map__title {
+  font-size: 21px;
+}
+
+.map__button {
+  margin-top: 5px;
+  padding: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,9 +22,20 @@
 
   .map__container {
     width: 460px;
+    margin-bottom: 57px;
   }
 
   .map__frame {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__title {
+    margin-bottom: 24px;
+  }
+
+  .map__frame {
+    margin-top: 65px;
   }
 }

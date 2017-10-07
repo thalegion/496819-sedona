@@ -6,3 +6,9 @@
 .logo__filler {
   width: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo__filler {
+    display: none;
+  }
+}
