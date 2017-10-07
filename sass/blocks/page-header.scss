@@ -77,7 +77,7 @@
     height: 80px;
 
     &--main {
-      height: 460px;
+      height: 505px;
     }
   }
 
@@ -85,6 +85,10 @@
     min-height: 290px;
 
     background-size: cover;
+
+    &--main {
+      min-height: 520px;
+    }
   }
 }
 
@@ -95,8 +99,7 @@
     background-size: cover;
 
     &--main {
-      margin-bottom: 42px;
-      min-width: 115px;
+      min-height: 520px;
     }
   }
 

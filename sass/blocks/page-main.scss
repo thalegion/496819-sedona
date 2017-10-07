@@ -4,6 +4,10 @@
   &--review {
     margin-bottom: 66px;
   }
+
+  &--main {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -12,6 +16,10 @@
 
     &--review {
       margin-bottom: 82px;
+    }
+
+    &--main {
+      margin-bottom: 40px;
     }
   }
 }
@@ -22,6 +30,10 @@
 
     &--review {
       margin-bottom: 85px;
+    }
+
+    &--main {
+      margin-bottom: 35px;
     }
   }
 }
