@@ -49,11 +49,15 @@
 }
 
 .reasons__title {
-  margin: 0 0 15px;
+  margin: 0 0 12px;
 
   font-family: $bold-font;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 24px;
+
+  &--small {
+    line-height: 28px;
+  }
 }
 
 .reasons__number {
@@ -76,14 +80,12 @@
 }
 
 .reasons__description-list {
-  padding: 30px 20px 0;
+  padding: 37px 20px 11px;
 
   text-align: left;
 
   background-color: #ffffff;
   color: #000000;
-
-  @include clearfix;
 }
 
 .reasons__description-item {
@@ -134,13 +136,13 @@
 
   font-family: $bold-font;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 24px;
 }
 
 .reasons__description-subtitle {
   font-family: $regular-font;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -155,7 +157,12 @@
 
   .reasons__title {
     font-size: 21px;
-    margin-bottom: 21px;
+    margin-bottom: 14px;
+
+    &--small {
+      line-height: 25px;
+      margin-bottom: 12px;
+    }
   }
 
   .reasons__description-title {
@@ -168,8 +175,12 @@
     flex-wrap: wrap;
   }
 
+  .reasons__info {
+    width: 100%;
+  }
+
   .reasons__subtitle {
-    line-height: 17px;
+    line-height: 24px;
   }
 
   .reasons__item {
@@ -183,7 +194,7 @@
       margin: 0;
 
       border-bottom: 0;
-      padding: 0 14px 50px;
+      padding: 0 14px 42px;
     }
   }
 
@@ -199,6 +210,7 @@
   .reasons__image {
     flex-grow: 1;
     margin-top: 0;
+    max-height: 255px;
   }
 
   .reasons__description-list {
@@ -221,12 +233,23 @@
 
       width: 80px;
       height: 80px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     &--gift {
       order: 1;
     }
+  }
+
+  .reasons__description-item--gift {
+    &::before {
+      background-size: 63px;
+      background-position: top left;
+    }
+  }
+
+  .reasons__description-subtitle {
+    line-height: 22px;
   }
 }
 
@@ -238,7 +261,7 @@
 
   .reasons__item--small {
     flex-basis: 400px;
-    padding-bottom: 70px;
+    padding-bottom: 66px;
 
     & .reasons__info {
       padding: 39px 80px 0;
@@ -247,5 +270,9 @@
 
   .reasons__description-item {
     margin-bottom: 85px;
+  }
+
+  .reasons__title--small {
+    line-height: 28px;
   }
 }

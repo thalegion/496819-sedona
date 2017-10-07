@@ -16,7 +16,7 @@
   }
 
   .page-footer__title {
-    margin-bottom: 0;
+    margin-bottom: 11px;
     flex-basis: 196px;
 
     text-align: left;
@@ -28,6 +28,7 @@
 
   .page-footer__copyright {
     flex-basis: 196px;
+    margin-bottom: 8px;
 
     text-align: right;
   }
@@ -35,8 +36,9 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__title {
-    flex-basis: 280px;
+    flex-basis: 268px;
     flex-shrink: 0;
+    margin-left: 12px;
   }
 
   .page-footer__socials {
