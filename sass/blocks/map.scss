@@ -1,10 +1,12 @@
 .map {
-  padding-top: 30px;
+  margin-bottom: 25px;
+}
+
+.map__container {
+  margin-bottom: 50px;
 }
 
 .map__frame {
-  margin-top: 50px;
-  margin-bottom: 25px;
   display: block;
 }
 
@@ -14,7 +16,7 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    padding-top: 50px;
+    margin-bottom: 40px;
   }
 
   .map__title {
@@ -27,7 +29,6 @@
 
   .map__frame {
     width: 100%;
-    margin-bottom: 40px;
   }
 }
 

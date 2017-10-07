@@ -2,6 +2,7 @@
   position: relative;
 
   padding-top: 37px;
+  margin-bottom: 30px;
 
   background-color: $main-background;
 
@@ -144,14 +145,12 @@
 
 @media (min-width: $tablet-width) {
   .reasons {
-    padding-top: 47px;
+    padding-top: 0;
+    margin-bottom: 50px;
   }
 
   .reasons::before {
-    height: 47px;
-
-    background-image: none;
-    background-color: #ffffff;
+    content: none;
   }
 
   .reasons__title {

@@ -27,15 +27,17 @@
 .page-header__introduction {
   position: relative;
 
-  padding: 52px 20px 58px;
-  margin-bottom: 40px;
+  min-height: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
 
   &--main {
-    padding: 58px 20px 50px;
+    min-height: 390px;
   }
 
   &::after {
@@ -80,8 +82,7 @@
   }
 
   .page-header__introduction {
-    padding: 25px 0 28px;
-    margin-bottom: 45px;
+    min-height: 290px;
 
     background-size: cover;
   }
@@ -89,14 +90,13 @@
 
 @media (min-width: $desktop-width) {
   .page-header__introduction {
-    padding: 103px 0 114px;
-    margin-bottom: 107px;
+    min-height: 303px;
 
     background-size: cover;
 
     &--main {
-      padding: 25px 0 30px;
       margin-bottom: 42px;
+      min-width: 115px;
     }
   }
 
