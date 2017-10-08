@@ -77,6 +77,12 @@
 .reasons__image {
   display: block;
   margin-top: 40px;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .reasons__description-list {
@@ -269,5 +275,13 @@
 
   .reasons__title--small {
     line-height: 28px;
+  }
+
+  .reasons__image {
+    overflow: hidden;
+
+    & img {
+      margin-top: -70px;
+    }
   }
 }
