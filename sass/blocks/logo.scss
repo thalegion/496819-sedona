@@ -12,3 +12,10 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    height: 95px;
+    width: 185px;
+  }
+}
