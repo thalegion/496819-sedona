@@ -65,6 +65,11 @@
   &--main {
     width: 280px;
   }
+
+  &--content {
+    width: 225px;
+    margin-top: -15px;
+  }
 }
 
 @media (min-width: $tablet-width) {
