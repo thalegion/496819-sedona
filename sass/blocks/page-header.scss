@@ -61,6 +61,12 @@
   }
 }
 
+.page-header__image {
+  &--main {
+    width: 280px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header__menu-toggle {
     display: none;
@@ -83,6 +89,7 @@
     margin-top: -15px;
 
     &--main {
+      width: 460px;
       height: 505px;
     }
   }

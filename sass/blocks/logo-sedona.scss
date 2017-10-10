@@ -1,0 +1,31 @@
+.logo-sedona__tablet {
+  display: none;
+}
+
+.logo-sedona__desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-sedona__mobile {
+    display: none;
+  }
+
+  .logo-sedona__tablet {
+    display: block;
+  }
+
+  .logo-sedona__desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-sedona__tablet {
+    display: none;
+  }
+
+  .logo-sedona__desktop {
+    display: block;
+  }
+}
