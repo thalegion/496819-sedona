@@ -7,9 +7,33 @@
   width: 24px;
 }
 
+.logo__svg {
+  &--tablet {
+    visibility: hidden;
+  }
+
+  &--desktop {
+    visibility: hidden;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .logo__filler {
     display: none;
+  }
+
+  .logo__svg {
+    &--mobile {
+      visibility: hidden;
+    }
+
+    &--tablet {
+      visibility: visible;
+    }
+
+    &--desktop {
+      visibility: hidden;
+    }
   }
 }
 
@@ -17,5 +41,15 @@
   .logo__image {
     height: 95px;
     width: 185px;
+  }
+
+  .logo__svg {
+    &--tablet {
+      visibility: hidden;
+    }
+
+    &--desktop {
+      visibility: visible;
+    }
   }
 }

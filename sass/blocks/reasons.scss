@@ -74,9 +74,16 @@
   line-height: 21px;
 }
 
+.reasons__info {
+  margin-bottom: 40px;
+
+  &--small {
+    margin-bottom: 0;
+  }
+}
+
 .reasons__image {
   display: block;
-  margin-top: 40px;
 
   & img {
     display: block;
@@ -204,6 +211,7 @@
     width: 100%;
     flex-basis: 256px;
     padding: 45px 35px 0;
+    margin-bottom: 0;
 
     &--end {
       order: 1;
