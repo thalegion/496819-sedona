@@ -1,6 +1,10 @@
 .menu {
   position: relative;
   z-index: 1;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .menu__close {
@@ -44,6 +48,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .menu--closed {
+    display: block;
+  }
+
   .menu__close {
     display: none;
   }

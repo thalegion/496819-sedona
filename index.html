@@ -79,6 +79,10 @@
                   <p class="reasons__subtitle">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <picture class="reasons__image">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/main-city-desktop@1x.webp 1x, ../img/main-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="../img/main-city-tablet@1x.webp 1x, ../img/main-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="../img/main-city-tablet@1x.webp 1x, ../img/main-city-tablet@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="../img/main-city-desktop@1x.jpg 1x, ../img/main-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="../img/main-city-tablet@1x.jpg 1x, ../img/main-city-tablet@2x.jpg 2x">
                   <img src="../img/main-city-mobile@1x.jpg" srcset="../img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Туристический городок">
@@ -105,6 +109,10 @@
                   <p class="reasons__subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
                 <picture class="reasons__image">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/main-bridge-desktop@1x.webp 1x, ../img/main-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="../img/main-bridge-tablet@1x.webp 1x, ../img/main-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="../img/main-bridge-mobile@1x.webp 1x,  ../img/main-bridge-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="../img/main-bridge-desktop@1x.jpg 1x, ../img/main-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="../img/main-bridge-tablet@1x.jpg 1x, ../img/main-bridge-tablet@2x.jpg 2x">
                   <img src="../img/main-bridge-mobile@1x.jpg" srcset="../img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола">
@@ -144,11 +152,16 @@
           </div>
 
           <div class="container__row">
-            <picture>
+            <div class="map__frame" id="map"></div>
+            <!-- <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="../img/bg-map-desktop@1x.webp 1x, ../img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.webp 1x, ../img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="../img/bg-map-mobile@1x.webp 1x, ../img/bg-map-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="../img/bg-map-desktop@1x.jpg 1x, ../img/bg-map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.jpg 1x, ../img/bg-map-tablet@2x.jpg 2x">
               <img class="map__frame" src="../img/bg-map-mobile@1x.jpg" srcset="../img/bg-map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта">
-            </picture>
+            </picture> -->
           </div>
         </section>
       </main>
@@ -197,5 +210,23 @@
     </div>
 
     <script src="../js/picturefill.min.js"></script>
+    <script>
+      function initMap() {
+        var uluru = {lat: 34.834072, lng: -111.913490};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: uluru,
+          disableDefaultUI: true
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: '../img/icon-map-marker.svg'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
   </body>
 </html>
