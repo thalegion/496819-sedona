@@ -2,15 +2,21 @@
   position: relative;
   z-index: 1;
 
+  margin-top: 0;
+
+  transition: all 0.3s linear;
+
   &--closed {
-    display: none;
+    margin-top: -70%;
   }
 }
 
 .menu__close {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 0;
+  right: 0;
+
+  padding: 20px;
 
   font-size: 0;
 
@@ -49,7 +55,7 @@
 
 @media (min-width: $tablet-width) {
   .menu--closed {
-    display: block;
+    margin-top: 0;
   }
 
   .menu__close {
