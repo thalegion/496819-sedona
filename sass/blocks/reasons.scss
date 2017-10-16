@@ -327,10 +327,10 @@
     flex-basis: 400px;
     max-width: 400px;
     padding-bottom: 66px;
+  }
 
-    & .reasons__info {
-      padding: 39px 80px 0;
-    }
+  .reasons__item--small .reasons__info {
+    padding: 39px 80px 0;
   }
 
   .reasons__description-item {
@@ -346,9 +346,9 @@
     max-width: 800px;
 
     overflow: hidden;
+  }
 
-    & img {
-      margin-top: -70px;
-    }
+  .reasons__image img {
+    margin-top: -70px;
   }
 }
