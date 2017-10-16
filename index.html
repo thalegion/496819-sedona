@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page page--main">
+    <div class="hidden">
+      <include src="build/img/icons-sprite.svg"></include>
+    </div>
+
     <div class="container">
       <div class="container__row container__row--header container__row--header-main">
         <header class="page-header">
@@ -39,10 +43,10 @@
           <div class="logo page-header__logo">
             <div class="logo__filler"></div>
             <a class="logo__link">
-              <svg class="logo__image" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="186.643px" height="96.425px" viewBox="0 0 186.643 96.425" enable-background="new 0 0 186.643 96.425" xml:space="preserve">
-                <use class="logo__svg logo__svg--mobile" href="../img/icons-sprite.svg#logo-sedona-mobile"></use>
-                <use class="logo__svg logo__svg--tablet" href="../img/icons-sprite.svg#logo-sedona-tablet"></use>
-                <use class="logo__svg logo__svg--desktop" href="../img/icons-sprite.svg#logo-sedona-desktop"></use>
+              <svg class="logo__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="186.643px" height="96.425px" viewBox="0 0 186.643 96.425" enable-background="new 0 0 186.643 96.425" xml:space="preserve">
+                <use class="logo__svg logo__svg--mobile" href="#logo-sedona-mobile"></use>
+                <use class="logo__svg logo__svg--tablet" href="#logo-sedona-tablet"></use>
+                <use class="logo__svg logo__svg--desktop" href="#logo-sedona-desktop"></use>
               </svg>
               <!-- <picture>
                 <source media="(min-width: 1200px)" srcset="../img/logo-sedona-desktop.svg">
@@ -54,8 +58,8 @@
           </div>
 
           <div class="page-header__introduction page-header__introduction--main">
-            <svg class="page-header__image page-header__image--main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="350.074px" viewBox="0 0 459.754 350.074" enable-background="new 0 0 459.754 350.074" xml:space="preserve">
-              <use href="../img/icons-sprite.svg#text-sedona-index"></use>
+            <svg class="page-header__image page-header__image--main" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="350.074px" viewBox="0 0 459.754 350.074" enable-background="new 0 0 459.754 350.074" xml:space="preserve">
+              <use href="#text-sedona-index"></use>
             </svg>
           </div>
         </header>
@@ -75,7 +79,7 @@
               <div class="reasons__item">
                 <div class="page__container reasons__info">
                   <p class="reasons__title">Настоящий городок</p>
-                  <p class="reasons__number">№1</p>
+                  <p class="reasons__number"><span class="reasons__number-wrapper">№1</span></p>
                   <p class="reasons__subtitle">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <picture class="reasons__image">
@@ -105,7 +109,7 @@
               <div class="reasons__item">
                 <div class="page__container reasons__info reasons__info--end">
                   <p class="reasons__title">Там есть<br class="br br--tablet"> мост дьявола</p>
-                  <p class="reasons__number">№2</p>
+                  <p class="reasons__number"><span class="reasons__number-wrapper">№2</span></p>
                   <p class="reasons__subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
                 <picture class="reasons__image">
@@ -121,21 +125,21 @@
               <div class="reasons__item reasons__item--small">
                 <div class="page__container reasons__info reasons__info--small">
                   <p class="reasons__title reasons__title--small">Небольшая площадь</p>
-                  <p class="reasons__number">№3</p>
+                  <p class="reasons__number reasons__number--small"><span class="reasons__number-wrapper">№3</span></p>
                   <p class="reasons__subtitle">Все интересные места находятся очень близко</p>
                 </div>
               </div>
               <div class="reasons__item reasons__item--small">
                 <div class="page__container reasons__info reasons__info--small">
                   <p class="reasons__title reasons__title--small">Красивая<br class="br br--tablet"> дорога</p>
-                  <p class="reasons__number">№4</p>
+                  <p class="reasons__number reasons__number--small"><span class="reasons__number-wrapper">№4</span></p>
                   <p class="reasons__subtitle">Ехать в седону из лас-вегаса совсем не скучно!</p>
                 </div>
               </div>
               <div class="reasons__item reasons__item--small">
                 <div class="page__container reasons__info reasons__info--small">
                   <p class="reasons__title reasons__title--small">Мало<br class="br br--tablet"> туристов</p>
-                  <p class="reasons__number">№5</p>
+                  <p class="reasons__number reasons__number--small"><span class="reasons__number-wrapper">№5</span></p>
                   <p class="reasons__subtitle">Большинство едет в гранд каньон и толпится там</p>
                 </div>
               </div>
@@ -173,22 +177,22 @@
             <ul class="socials__list">
               <li class="socials__item">
                 <a class="socials__link" href="https://twitter.com/">
-                  <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                    <use href="../img/icons-sprite.svg#icon-twitter"></use>
+                  <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                    <use href="#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="https://facebook.com/">
-                  <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                    <use href="../img/icons-sprite.svg#icon-facebook"></use>
+                  <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                    <use href="#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="https://youtube.com/">
-                  <svg class="socials__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                    <use href="../img/icons-sprite.svg#icon-youtube"></use>
+                  <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                    <use href="#icon-youtube"></use>
                   </svg>
                 </a>
               </li>
@@ -199,8 +203,8 @@
             <a class="copyright__link" href="https://htmlacademy.ru/">
               Разработано
 
-              <svg class="copyright__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-                <use href="../img/icons-sprite.svg#logo-htmlacademy"></use>
+              <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                <use href="#logo-htmlacademy"></use>
               </svg>
 
             </a>

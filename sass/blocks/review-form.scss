@@ -25,6 +25,8 @@
 
   &--dynamic {
     display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 20px;
   }
 
   &--intent {
@@ -257,6 +259,7 @@
   background-color: #f2f2f2;
   resize: none;
   border: 2px solid #f2f2f2;
+  overflow: hidden;
 
   &:hover {
     background-color: #e5e5e5;
@@ -330,6 +333,7 @@
     justify-content: center;
     flex-direction: column;
     max-height: 200px;
+    height: 200px;
     padding: 10px 96px 0 94px;
     align-content: space-between;
   }
@@ -456,5 +460,6 @@
     padding: 0;
     justify-content: space-between;
     margin-top: 35px;
+    height: auto;
   }
 }
