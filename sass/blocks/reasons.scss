@@ -246,6 +246,9 @@
     flex-basis: 100%;
     flex-wrap: wrap;
     padding-top: 0;
+    max-width: 33.33%;
+    overflow: hidden;
+
 
     &--small {
       flex-basis: 256px;

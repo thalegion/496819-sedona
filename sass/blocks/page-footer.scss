@@ -18,17 +18,23 @@
   .page-footer__title {
     margin-bottom: 11px;
     flex-basis: 196px;
+    max-width: 196px;
+    overflow: hidden;
 
     text-align: left;
   }
 
   .page-footer__socials {
     flex-basis: 256px;
+    max-width: 256px;
+    overflow: hidden;
   }
 
   .page-footer__copyright {
     flex-basis: 196px;
     margin-bottom: 8px;
+    max-width: 196px;
+    overflow: hidden;
 
     text-align: right;
   }
@@ -39,16 +45,19 @@
     flex-basis: 268px;
     flex-shrink: 0;
     margin-left: 12px;
+    max-width: 268px;
   }
 
   .page-footer__socials {
     flex-basis: 400px;
     flex-shrink: 0;
+    max-width: 400px;
   }
 
   .page-footer__copyright {
     flex-basis: 355px;
     flex-shrink: 0;
+    max-height: 355px;
 
     text-align: right;
   }
