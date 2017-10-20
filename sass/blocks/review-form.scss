@@ -122,7 +122,12 @@
 }
 
 .review-form__radio {
-  display: none;
+  width: 0;
+  height: 0;
+}
+
+.review-form__radio:focus + .review-form__radio-control {
+  outline: 1px solid #81b3d3;
 }
 
 .review-form__radio-control {
@@ -180,7 +185,12 @@
 }
 
 .review-form__checkbox {
-  display: none;
+  width: 0;
+  height: 0;
+}
+
+.review-form__checkbox:focus + .review-form__checkbox-control {
+  outline: 1px solid #81b3d3;
 }
 
 .review-form__checkbox-control {
