@@ -161,6 +161,15 @@
     padding: 0 80px;
   }
 
+  .presentation__controls {
+    height: 92px;
+    align-items: center;
+  }
+
+  .presentation__control {
+    height: auto;
+  }
+
   .presentation__video-wrapper::after {
     background-image: url("../img/video-desktop@1x.jpg");
 
@@ -169,7 +178,11 @@
     }
   }
 
-  .presentation__control--timeline::after {
-    left: 21%;
+  .presentation__control--timeline {
+    bottom: 0;
+
+    &::after {
+      left: 21%;
+    }
   }
 }

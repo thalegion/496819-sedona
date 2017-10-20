@@ -246,8 +246,6 @@
     flex-basis: 100%;
     flex-wrap: wrap;
     padding-top: 0;
-    max-width: 33.33%;
-    overflow: hidden;
 
 
     &--small {
@@ -292,6 +290,8 @@
     align-items: center;*/
     padding: 0 35px;
     margin-bottom: 63px;
+    max-width: 33.33%;
+    overflow: hidden;
     /*flex-basis: 33.33%;*/
 
     text-align: center;
