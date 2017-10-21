@@ -72,7 +72,7 @@
     content: "";
 
     position: absolute;
-    top: 45%;
+    top: 42%;
     left: 20%;
 
     display: block;
@@ -139,6 +139,7 @@
 
     &::after {
       left: 29%;
+      top: 46%;
     }
   }
 
@@ -183,6 +184,7 @@
 
     &::after {
       left: 21%;
+      top: -2px;
     }
   }
 }
