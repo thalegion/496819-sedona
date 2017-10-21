@@ -124,6 +124,7 @@
 .review-form__radio {
   width: 0;
   height: 0;
+  position: absolute;
 }
 
 .review-form__radio:focus + .review-form__radio-control {
@@ -187,6 +188,7 @@
 .review-form__checkbox {
   width: 0;
   height: 0;
+  position: absolute;
 }
 
 .review-form__checkbox:focus + .review-form__checkbox-control {
