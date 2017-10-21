@@ -4,6 +4,7 @@
 
 .photos__item {
   padding: 0 20px;
+  max-width: 100%;
 
   border-top: 1px solid #e5e5e5;
 }
@@ -94,10 +95,27 @@
     flex-wrap: wrap;
     max-height: 100px;
     align-content: space-between;
-    justify-content: center;
     padding: 15px 20px 12px;
+    height: 80px;
+    overflow: hidden;
 
     background-color: #f2f2f2;
+  }
+
+  .photos__title {
+    max-width: 80%;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .photos__subtitle {
+    max-width: 80%;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .photos__item:first-child .photos__image {

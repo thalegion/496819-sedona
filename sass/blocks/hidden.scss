@@ -2,17 +2,17 @@
   display: none;
 
   &--desktop {
-    display: initial;
+    display: inline;
   }
 }
 
 @media (min-width: $tablet-width) {
   .hidden--mobile {
-    display: initial;
+    display: inherit;
   }
 
   .hidden--desktop {
-    display: initial;
+    display: inline;
   }
 }
 

@@ -61,11 +61,60 @@
 }
 
 .reasons__number {
+  position: relative;
+
   margin: auto 0 15px;
 
   font-family: $regular-font;
   font-size: 14px;
   line-height: 21px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    display: block;
+    width: 50px;
+    height: 1px;
+
+    background-color: #ffffff;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    display: block;
+    width: 30px;
+    height: 15px;
+
+    background-color: #81b3d2;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.reasons__number--small {
+  &::before {
+    background-color: #000000;
+  }
+
+  &::after {
+    background-color: #eeeeee;
+  }
+}
+
+.reasons__number-wrapper {
+  position: relative;
+  z-index: 2;
 }
 
 .reasons__subtitle {
@@ -198,8 +247,10 @@
     flex-wrap: wrap;
     padding-top: 0;
 
+
     &--small {
       flex-basis: 256px;
+      max-width: 256px;
       margin: 0;
 
       border-bottom: 0;
@@ -210,6 +261,7 @@
   .reasons__info {
     width: 100%;
     flex-basis: 256px;
+    max-width: 256px;
     padding: 45px 35px 0;
     margin-bottom: 0;
 
@@ -222,6 +274,8 @@
     flex-grow: 1;
     margin-top: 0;
     max-height: 255px;
+    flex-basis: calc(768px - 256px);
+    max-width: calc(768px - 256px);
   }
 
   .reasons__description-list {
@@ -231,11 +285,14 @@
   }
 
   .reasons__description-item {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
     padding: 0 35px;
     margin-bottom: 63px;
+    max-width: 33.33%;
+    overflow: hidden;
+    /*flex-basis: 33.33%;*/
 
     text-align: center;
 
@@ -244,6 +301,7 @@
 
       width: 80px;
       height: 80px;
+      margin: auto;
       margin-bottom: 20px;
     }
 
@@ -254,7 +312,6 @@
 
   .reasons__description-item--gift::before {
     background-size: 63px;
-    background-position: top left;
   }
 
   .reasons__description-subtitle {
@@ -266,15 +323,17 @@
   .reasons__info {
     flex-basis: 400px;
     padding: 52px 95px 0;
+    max-width: 400px;
   }
 
   .reasons__item--small {
     flex-basis: 400px;
+    max-width: 400px;
     padding-bottom: 66px;
+  }
 
-    & .reasons__info {
-      padding: 39px 80px 0;
-    }
+  .reasons__item--small .reasons__info {
+    padding: 39px 80px 0;
   }
 
   .reasons__description-item {
@@ -286,10 +345,13 @@
   }
 
   .reasons__image {
-    overflow: hidden;
+    flex-basis: 800px;
+    max-width: 800px;
 
-    & img {
-      margin-top: -70px;
-    }
+    overflow: hidden;
+  }
+
+  .reasons__image img {
+    margin-top: -70px;
   }
 }
