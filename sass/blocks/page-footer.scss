@@ -41,17 +41,22 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    margin-right: -75px;
+  }
+
   .page-footer__title {
-    flex-basis: 268px;
+    flex-basis: 140px;
     flex-shrink: 0;
     margin-left: 12px;
-    max-width: 268px;
+    max-width: 140px;
   }
 
   .page-footer__socials {
     flex-basis: 400px;
     flex-shrink: 0;
     max-width: 400px;
+    margin-left: -32px;
   }
 
   .page-footer__copyright {
