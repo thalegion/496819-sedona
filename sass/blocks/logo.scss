@@ -17,6 +17,10 @@
   }
 }
 
+.logo__image {
+  height: 85px;
+}
+
 @media (min-width: $tablet-width) {
   .logo__filler {
     display: none;
